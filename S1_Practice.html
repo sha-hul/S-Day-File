@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="shahul">
+    <meta name="description" content="Complex Table design">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Table</title>
+    <style>
+        /*Style for complex table*/
+        .Complex {
+            border: 2px solid black;
+            border-collapse: separate;
+        }
+
+        .Complex th,
+        .Complex td {
+            border: 2px solid black;
+            padding: 3px;
+        }
+
+        /*Style for Exercise 1*/
+        .Exercise1 {
+            border: 3px solid rgba(99, 92, 92, 0.584);
+        }
+
+        .Exercise1 th {
+            border: 1px solid black;
+            text-align: center;
+            background-color: rgb(0, 187, 255);
+        }
+
+        #header {
+            color: Red;
+            background-color: rgba(255, 255, 0, 0.614);
+        }
+
+        .Exercise1 td {
+            border: 1px solid black;
+            background-color: rgb(0, 187, 255);
+        }
+
+        tfoot>tr>td {
+            text-align: center;
+        }
+
+        .verticle {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <base href="../Front End Projects/FD1/Session1_Takehome/joshua-earle-EqztQX9btrE-unsplash.jpg">
+</head>
+
+<body>
+    <h2 style="text-align: center;">Complex Table</h2>
+    <!-- Complex Table-->
+    <table class="Complex">
+        <tr>
+            <th>Quick</th>
+            <th colspan="2">brown fox</th>
+            <th>jumps</th>
+        </tr>
+        <tr>
+            <td rowspan="3">over then</td>
+            <td>lazy</td>
+            <td>dog</td>
+            <td>and</td>
+        </tr>
+        <tr>
+            <td>then</td>
+            <td>it</td>
+            <td>fall</td>
+        </tr>
+        <tr>
+            <td colspan="3">then</td>
+        </tr>
+    </table>
+    <!--Exercise 1-->
+    <h2 style="text-align: center;">Exercise 1</h2>
+    <table class="Exercise1">
+        <thead>
+            <tr>
+                <th id="header" colspan="3">Registration Form</th>
+            </tr>
+        </thead>
+        <tbody>
+            <form action="#" enctype="multipart/form-data">
+                <tr>
+                    <th><label for="name">Enter Name</label></th>
+                    <td colspan="2"><input type="text" name="Name" id="name"></td>
+                </tr>
+                <tr>
+                    <th><label for="pas">Enter Password</label></th>
+                    <td colspan="2"><input type="password" name="Password" id="pas"></td>
+                </tr>
+                <tr>
+                    <th><label for="add"></label></th>
+                    <td colspan="2"><textarea id="" name="Address" cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <th><label for="game">Select Game</label></th>
+                    <td colspan="2">
+                        <input type="checkbox" name="game" value="Hockey"> Hockey <br>
+                        <input type="checkbox" name="game" value="football"> Football <br>
+                        <input type="checkbox" name="game" value="badminton"> Badminton <br>
+                        <input type="checkbox" name="game" value="cricket"> Cricket <br>
+                        <input type="checkbox" name="game" value="vb"> volleyball <br>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="gender"> Gender</label></th>
+                    <td colspan="2">
+                        <input type="radio" name="gender" checked>Male
+                        <input type="radio" name="gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="age">Select ur age</label></th>
+                    <td colspan="2"><select class="verticle" name="age" id="age">
+                            <option value="">Select</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value=">21">Above 21</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <th><label for="photo">Select Photo</label></th>
+                    <td colspan="2"><input type="file" name="photo" id="photo"></td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td style=" border: 0px;"><input type="button" value="Click me"></td>
+                <td style=" border: 0px;"><input type="reset" value="Reset"></td>
+                <td style=" border: 0px;"><input type="submit" value="Submit Form"></td>
+            </tr>
+            </form>
+        </tfoot>
+
+    </table>
+    <!--Tags to remember-->
+    <abbr title="Client Visit Management">CVM</abbr>
+    <blockquote>
+        Used of client visit request
+    </blockquote>
+    <q>
+        Used of client visit request
+    </q>
+    <pre>
+        Used of client visit request
+        by Sales Team
+    </pre>
+    <marquee behavior="" direction="rtol">Hello</marquee>
+    <small>HELLO CVM</small>
+    <mark>CCB</mark>
+    <ins>WBS</ins>
+    <del>Estimation Tracker</del>
+    H<sub>2</sub>O
+    <dl>
+        <dt>Projects</dt>
+        <dd>CVM</dd>
+        <dd>MC</dd>
+        <dd>FBS</dd>
+        <dd>AAI</dd>
+    </dl>
+    <a href="">Base</a>
+    <bdo dir="rtl">success</bdo>
+    <figure>
+        <img src="data:image/jpeg;base64,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" alt="WallPaper" width="250px" height="220px" >
+        <figcaption>Wall Paper</caption>
+    </figure>
+    <div >
+        <details>
+            <summary>
+                When did tacos first apppear in the United States?
+            </summary>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum accusamus itaque exercitationem? Nostrum voluptatum, tempore repudiandae aut adipisci at aspernatur. Assumenda est minima, provident autem amet voluptas illo repellat. Id?
+            </p>
+        </details>
+    </div>
+    <form action="#">
+        <fieldset>
+            <legend>
+                Sign In
+            </legend>
+            <form action="#">
+                <label for="">Name</label>
+                <input type="text" min="10"  placeholder="Enter your Name">
+            </form>
+        </fieldset>
+    </form>
+</body>
+
+</html>
